@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <!-- styles put here, but you can include a CSS file and reference it instead! -->
+      <meta charset="UTF-8">
+      <title>Map Marker</title>
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+   </head>
+   <body>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="menu">
+            <h2>Search for your next best resturant in Riyadh </h2>
+            <div>
+                <input id='places-search' type="text" placeholder="Ex:Mistro Pitzza.." title="Type in a name">
+                <input id='go-places' type='button' value="Go">
+               <input id='show-listing' type='button' value="show listing">
+               <input id='hide-listing' type='button' value="hide listing">
+            </div>
+         </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Bart Locations</span>
+      <div id="map"></div>
+      <script src="JavaScript/mapFunction.js"></script>
+      <script src="JavaScript/minuFunctions.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
+      <script async defer
+         src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBk8-zSu0re0Bg-4I4dMXbC-q383q6aLN8&v=3&callback=initMap"></script>
+       <script src="JavaScript/searchFunction.js"></script>
+   </body>
+</html>
